@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이쁜 HTML 페이지</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-content h3 {
+            margin: 0;
+            color: #333;
+        }
+        .card-content p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>이쁜 HTML 페이지</h1>
+        <p>간단하고 아름다운 디자인</p>
+    </header>
+
+    <nav>
+        <a href="#">홈</a>
+        <a href="#">서비스</a>
+        <a href="#">연락처</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="이미지 1">
+            <div class="card-content">
+                <h3>카드 제목 1</h3>
+                <p>이것은 간단한 카드 설명입니다. 멋진 이미지와 함께!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="이미지 2">
+            <div class="card-content">
+                <h3>카드 제목 2</h3>
+                <p>이것은 또 다른 카드 설명입니다. 사용자의 관심을 끌기 위해!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="이미지 3">
+            <div class="card-content">
+                <h3>카드 제목 3</h3>
+                <p>마지막 카드 설명입니다. 창의적인 디자인을 제공합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 이쁜 HTML 페이지. 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>
